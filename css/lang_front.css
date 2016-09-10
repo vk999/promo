@@ -1,0 +1,42 @@
+.lang_zone{
+  margin: -130px 0 0 554px;
+  position: relative;
+  position: absolute;
+  color: #162850;
+}
+
+ .lang_zone li{
+ display: inline-block;
+ font:11px Tahoma; font-weight:bold;
+ border-right: 1px solid #fff;
+ padding: 0 10px 0 10px;
+}
+.lang_zone li:last-child {border:none;}
+
+ .lang_zone li a {color:#fff; text-decoration:none; }
+
+/*
+.btn_lang{
+	font:10px Tahoma; font-weight:bold; 
+	width: 40px;
+  margin-right:20px;
+}
+
+.btn_lang a {color:#6577a5; padding-left: 20px;}
+
+.ru {
+	background: url(/images/lang/ru.gif) no-repeat left top;
+	margin-bottom: 5px;
+}
+
+
+.ua {
+	background: url(/images/lang/ua.gif) no-repeat left top;
+	margin-bottom: 5px;
+}
+
+.en {
+	background: url(/images/lang/en.gif) no-repeat left top;
+	margin-bottom: 5px;
+}
+*/

@@ -1,0 +1,67 @@
+#gallery-panel {width:600px; margin: 0 auto;}
+.gallery-block {
+    float:left;
+    text-align:center; 
+    margin: 8px;
+    background:#eee;
+    border: 1px solid #a0a0a0;
+}
+.gallery-block img{
+    margin: 4 0 4 0;
+    border: 1px solid #a0a0a0;
+}
+
+
+.gallery-caption {
+  padding:6;
+  text-align:center;
+  color:#fff;
+  font: 12px Arial;
+  /*background:#a0a0a0;*/
+  /*float:top;*/
+  height:26px;
+  overflow:hidden; 
+
+  
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2F2727), to(#a0a0a0));
+  
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #a0a0a0, #2F2727);
+  
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #a0a0a0, #2F2727);
+  
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #a0a0a0, #2F2727);
+  
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #a0a0a0, #2F2727);
+
+}
+
+.gallery-block img{
+-webkit-transform:scale(1.0); /*Webkit: уменьшаем размер до 0.8*/
+-moz-transform:scale(1.0); /*Mozilla: масштабирование*/
+-o-transform:scale(1.0); /*Opera: масштабирование*/
+-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+opacity: 0.7; /*Начальная прозрачность изображений*/
+/*margin: 0 10px 5px 0; Интервалы между изображениями*/
+}
+
+.gallery-block img:hover{
+-webkit-transform:scale(1.3); /*Webkit: увеличиваем размер до 1.2x*/
+-moz-transform:scale(1.3); /*Mozilla: масштабирование*/
+-o-transform:scale(1.3); /*Opera: масштабирование*/
+box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+-webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+opacity: 1;
+}
+
+.gallery-row {
+	float:left;
+}

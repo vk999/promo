@@ -1,0 +1,30 @@
+.lang_zone{ 
+  
+  position: absolute; 
+  margin: -105px 0 0 240px;
+	display: inline;
+  
+}
+
+.btn_lang{
+	font:10px Tahoma; font-weight:bold; 
+	width: 40px;
+}
+
+.btn_lang a {color:#fff; padding-left: 20px;}
+
+.ru {
+	background: url(/images/lang/ru.gif) no-repeat left top;
+	margin-bottom: 5px; margin-top: 5px;
+}
+
+
+.ua {
+	background: url(/images/lang/ua.gif) no-repeat left top;
+	margin-bottom: 5px;
+}
+
+.en {
+	background: url(/images/lang/en.gif) no-repeat left top;
+	margin-bottom: 5px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Books Forever</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/js/jquery-1.8.2.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script>
+function getOrder()
+{
+
+alert(1);    
+var js_data = {
+    		Order_No: 1
+        };
+    $.ajax({
+        type:'GET',
+        url:"/service/examples/jsp/jsp2/simpletag/hello.jsp",
+        cache: false,
+        dataType: 'text', // формат данных
+        data: js_data,
+        success:function (data) {
+            alert(data);
+        },
+
+       error: function(jqXHR, textStatus){// если ошибка
+    	   alert("loading error!");
+    	   alert(jqXHR.responseText);
+        }
+    });
+}
+</script>
+</head>
+<body>
+
+<div id="page_header">
+<h1>demo</h1>
+<input type="button" value="get" onclick="getOrder()"/>
+</div>
+
+</body>
+</html>

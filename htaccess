@@ -1,0 +1,4 @@
+RewriteEngine on
+Options +FollowSymlinks
+
+RewriteRule ajax/(.*)$ http://127.0.0.1:8080/?cmd=$1 [L,QSA]
